@@ -19,6 +19,17 @@ jobs:
       matrix:
           os: [ windows-latest, ubuntu-latest ]
           dot-net-version: [ 8.0.x ]
+          # we can use below syntax as well to include new os,dotnet version instead of defining os list as shown above
+        # include:
+          # - os: ubuntu-latest 
+          #   dot-net-version: 3.1.x
+          
+          # we can also exclude a specific os,dotnet version using exclude keyword as shown below
+        # exclude:
+          #  - os: windows-latest
+          #    dot-net-version: 5.0.x
+         
+      
           
       
     steps:
