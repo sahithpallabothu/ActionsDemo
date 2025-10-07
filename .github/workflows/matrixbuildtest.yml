@@ -17,7 +17,7 @@ jobs:
     # creating a matrix to run multiple jobs for different os with different version of dotnet
     strategy:
       matrix:
-          os: [ windows_latest, ubuntu_latest ]
+          os: [ windows-latest, ubuntu-latest ]
           dot-net-version: [ 8.0.x ]
           
       
